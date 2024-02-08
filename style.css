@@ -1,0 +1,103 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+    background-color: #181818;   
+}
+
+@font-face {
+    font-family: haas;
+    src: url(graphik/GraphikMedium.otf);
+}
+
+h1{
+    font-family: haas, serif;
+    padding: 25px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    color: azure;
+    padding-left: 35px;
+}
+
+h2{
+    font-family: haas, serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: azure;
+    padding-left: 35px;
+    padding-bottom: 76px;
+}
+
+/* .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 7px;
+    grid-row-gap: 7px;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 25px;
+} */
+
+
+@font-face {
+    font-family: haaas;
+    src: url(graphik/GraphikRegular.otf);
+}
+
+@font-face {
+    font-family: sent;
+    src: url(inferi/Inferi-Trial-BookItalic.otf);
+}
+
+.sentence{
+    font-family: sent;
+    font-size: 60px;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 56px;
+    line-height: 65px;
+    color:azure;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+.b{
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 12px;
+}
+
+.b:hover{
+    color: royalblue;
+    font-family: haaas;
+}
+
+.c{
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 12px;
+}
+
+.c:hover{
+    color: greenyellow;
+    font-family: haaas;
+
+}
+
+.d{
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 12px;
+}
+
+.d:hover{
+    color: #FF5F1F;
+    font-family: haaas;
+
+}

@@ -1,0 +1,19 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+    background-color: #181818;   
+}
+
+@font-face {
+    font-family: haas;
+    src: url(graphik/GraphikMedium.otf);
+}
+h1{
+    font-family: haas, serif;
+    padding: 125px;
+    font-size: 151px;
+    color: azure;
+    text-align: center;
+}
