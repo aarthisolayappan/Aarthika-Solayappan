@@ -3,7 +3,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;  
-    background-color: #181818;   
+    background-color: #181818;  
+    overflow: hidden; 
 }
 
 @font-face {
@@ -28,18 +29,6 @@ h2{
     padding-left: 35px;
     padding-bottom: 76px;
 }
-
-/* .parent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 7px;
-    grid-row-gap: 7px;
-    height: 100vh;
-    width: 100vw;
-    padding-top: 25px;
-} */
-
 
 @font-face {
     font-family: haaas;
@@ -74,9 +63,26 @@ a{
 }
 
 .b:hover{
+    color: #FF4D00;
+    font-family: haaas;
+
+}
+
+/* 
+.hide{
+    display: none;
+}
+
+
+.b:hover + .hide{
+    display: block;
     color: royalblue;
     font-family: haaas;
+    width: 200px;
+    height: 20px;
 }
+ */
+
 
 .c{
     text-decoration: underline;
@@ -97,7 +103,127 @@ a{
 }
 
 .d:hover{
-    color: #FF5F1F;
+    color: royalblue;
     font-family: haaas;
 
+}
+
+
+
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 768px) {
+
+    body{
+        overflow: hidden;
+    }
+
+    h1{
+        font-family: haas, serif;
+        width: fit-content;
+        padding-top: 17px;
+        padding-bottom: 4px;
+        font-size: 17px;
+        color: azure;
+        padding-left: 17px;
+    }
+    
+    h2{
+        font-family: haas, serif;
+        font-size: 14px;
+        width: max-content;
+        font-weight: lighter;
+        color: azure;
+        padding-left: 17px;
+        padding-bottom: 61px;
+    }
+    
+    .flex{
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+
+    }
+
+
+    .sentence{
+        font-family: sent;
+        font-size: 24px;
+        text-align: center;
+        padding-left: 43px;
+        padding-right: 43px;
+        padding-bottom: 56px;
+        line-height: 26px;
+    }
+
+    .sentence:nth-of-type(3){
+        padding-bottom: 0;
+    }
+    
+    @keyframes one {
+        from{
+            color: azure;
+            font-family: sent;
+        }
+        to{
+            color: #FF4D00;
+            font-family: haaas;
+        }
+    }
+
+    
+    .b{
+        text-decoration-thickness: 2.1px;
+        text-underline-offset: 3.5px;
+        animation-name: one;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    
+    
+
+    @keyframes two {
+        from{
+            color: azure;
+            font-family: sent;
+        }
+        to{
+            color: greenyellow;
+            font-family: haaas;
+        }
+    }
+
+    .c{
+        text-decoration-thickness: 2.1px;
+        text-underline-offset: 3.5px;
+        animation-name: two;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+
+    @keyframes three {
+        from{
+            color: azure;
+            font-family: sent;
+        }
+        to{
+            color: royalblue;
+            font-family: haaas;
+        }
+    }
+
+    .d{
+        text-decoration-thickness: 2.1px;
+        text-underline-offset: 3.5px;
+        animation-name: three;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    
 }
